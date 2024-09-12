@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        td[colspan="3"] {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar Membuat Form</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+
+            <tr>
+                <td>NIM</td>
+                <td>:</td>
+                <td><input type="text" name="nim"></td>
+            </tr>
+
+            <tr>
+                <td>Tempat Lahir</td>
+                <td>:</td>
+                <td><input type="text" name="tllahir"></td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="text" name="tgllahir"></td>
+            </tr>
+
+            <tr>
+                <td>Program Studi</td>
+                <td>:</td>
+                <td>
+                    <select name="prodi">
+                        <option value="PGSD">Pendidikan Guru Sekolah Dasar</option>
+                        <option value="PGPAUD">Pendidikan Guru Pendidikan Anak Usia Dini</option>
+                        <option value="PKP">Pendidikan Kelautan Perikanan</option>
+                        <option value="SIK">Sistem Informasi Kelautan</option>
+                        <option value="LK">Logistik Kelautan</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jk" value="perempuan"> Perempuan
+                    <input type="radio" name="jk" value="laki-laki"> Laki-laki
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobi</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="hobi" value="menari"> Menari
+                    <input type="checkbox" name="hobi" value="nyanyi"> Nyanyi
+                    <input type="checkbox" name="hobi" value="jalan"> Jalan
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Simpan">
+                </td>
+            </tr>
+        </table>
+    </form> 
+</body>
+</html>
