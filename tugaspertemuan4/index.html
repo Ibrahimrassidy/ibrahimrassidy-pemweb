@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pribadi</title>
+    <link rel="stylesheet" href="styleindex.css">
+
+    <style>
+        /* CSS untuk menempatkan navigasi di kanan atas */
+        header {
+            position: relative;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        /* Styling untuk gambar utama */
+        .hero-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Styling untuk profil pribadi */
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        /* Styling untuk testimonial */
+        .testimonial {
+            border: 1px solid #007BFF;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        /* Styling untuk bagian kontak */
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Halaman Pribadi Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Profil Pribadi -->
+        <section class="profile">
+            <img src="baim.jpg" alt="Profil Ibrahim Rassidy Bahroun">
+            <div>
+                <h2>Nama Saya Ibrahim Rassidy Bahroun</h2>
+                <p>Saya seorang Mahasiswa Sistem Informasi Kelautan yang berdedikasi untuk memberikan yang terbaik.</p>
+                <div class="social-links">
+                    <h3>Temukan saya di:</h3>
+                    <a href="https://www.facebook.com/ibrahim.rassyid" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/ibrhmrassidy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+                    <a href="https://x.com/ucokskatepunk" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian teks utama dengan highlight -->
+        <section>
+            <p><span class="highlight">Ini adalah halaman utama</span> website sederhana saya. Jelajahi berbagai informasi menarik dan temukan layanan serta produk unggulan saya. Saya senang bisa berbagi informasi yang berguna bagi Anda.</p>
+        </section>
+
+        <!-- Bagian tentang layanan -->
+        <section>
+            <h2>Layanan Saya</h2>
+            <ul>
+                <li>Pijat Kretek.</li>
+                <li>Konsultasi Kesehatan Mental.</li>
+                <li>Bengkel.</li>
+            </ul>
+        </section>
+
+        <!-- Tabel informasi penting -->
+        <section>
+            <h2>Informasi Penting</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Layanan 24/7</td>
+                        <td>Kami tersedia untuk melayani Anda kapan saja.</td>
+                    </tr>
+                    <tr>
+                        <td>Kontak Cepat</td>
+                        <td>Hubungi saya melalui halaman <a href="contact.html">Contact</a>.</td>
+                    </tr>
+                    <tr>
+                        <td>Konsultasi Gratis</td>
+                        <td>Dapatkan konsultasi awal secara gratis.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bagian Testimonial -->
+        <section>
+            <h2>Testimonial</h2>
+            <div class="testimonial">
+                <p>"Sangat puas dengan layanan yang diberikan! Profesional dan cepat tanggap!"</p>
+                <p>- Klien Bahagia</p>
+            </div>
+        </section>
+
+        <!-- Form Kontak -->
+        <section class="contact-form">
+            <h2>Hubungi Saya</h2>
+            <form action="#">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 | Dibuat dengan ❤️</p>
+    </footer>
+</body>
+</html>

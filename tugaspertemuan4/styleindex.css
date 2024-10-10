@@ -1,0 +1,119 @@
+/* CSS Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea); /* Latar belakang dengan gradient */
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease; /* Animasi transisi latar belakang */
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Transisi untuk efek hover */
+}
+
+nav ul li a:hover {
+    color: #004d40;
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+/* Gambar utama */
+.hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+    transition: transform 0.3s ease; /* Animasi zoom */
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* Zoom saat hover */
+}
+
+/* Styling untuk section */
+section {
+    padding: 20px;
+    background: #f1f8e9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Ruang antar section */
+}
+
+h2 {
+    color: #004d40; /* Warna judul */
+}
+
+/* Styling untuk daftar layanan */
+ul {
+    list-style-type: none; /* Menghilangkan bullet pada list */
+    padding: 0;
+}
+
+li {
+    background-color: #00796b; /* Warna latar untuk item layanan */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: transform 0.3s, background-color 0.3s; /* Efek animasi */
+}
+
+li:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+    background-color: #004d40; /* Warna latar saat hover */
+}
+
+/* Tabel informasi */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #007BFF;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e0f7fa;
+    border-top: 2px solid #00796b; /* Garis pemisah */
+}
+
+footer p {
+    margin: 0;
+    color: #004d40;
+}

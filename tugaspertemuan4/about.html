@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya</title>
+    <link rel="stylesheet" href="styleabout.css">
+
+    <style>
+        /* CSS untuk menempatkan navigasi di kanan atas */
+        header {
+            position: relative;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        /* Styling untuk gambar profil */
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Styling untuk bio */
+        .bio {
+            margin: 20px 0;
+        }
+
+        /* Styling untuk hobi dan keterampilan */
+        .skills, .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .skill, .hobby {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            transition: transform 0.3s;
+        }
+
+        .skill:hover, .hobby:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tentang Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img src="baim.jpg" alt="Profil Saya" class="profile-img">
+            <div class="bio">
+                <h2>Nama Saya Ibrahim Rassidy Bahroun</h2>
+                <p>Saya adalah seorang mahasiswa Sistem Informasi Kelautan yang memiliki passion dalam teknologi dan pengembangan diri.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Keterampilan</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hobi</h2>
+            <div class="hobbies">
+                <div class="hobby">Membaca</div>
+                <div class="hobby">Bersepeda</div>
+                <div class="hobby">Bermain Musik</div>
+                <div class="hobby">Memasak</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 | Dibuat dengan ❤️</p>
+    </footer>
+</body>
+</html>
